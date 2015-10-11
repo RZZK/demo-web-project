@@ -36,6 +36,14 @@ public class WebController {
 	 */
 	@Autowired
 	private UserManager userManager;
+	
+	@RequestMapping(value = "/cs480/hello", method = RequestMethod.GET)
+	String hello() {
+		// You can replace this with other string,
+		// and run the application locally to check your changes
+		// with the URL: http://localhost:8080/
+		return "Goodbye";
+	}
 
 	/**
 	 * This is a simple example of how the HTTP API works.
