@@ -44,7 +44,12 @@ public class WebController {
 		// with the URL: http://localhost:8080/
 		return "Goodbye";
 	}
-
+	@RequestMapping(value = "/cs480",method = RequestMethod.GET){
+		String goodbye(){
+			return "Hello";
+			
+		}
+	}
 	/**
 	 * This is a simple example of how the HTTP API works.
 	 * It returns a String "OK" in the HTTP response.
